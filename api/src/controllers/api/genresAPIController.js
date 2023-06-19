@@ -24,7 +24,7 @@ const genresAPIController = {
                 },
                 data: genres
             }
-                res.json(respuesta);
+                res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000').json(respuesta);
             })
     },
     
